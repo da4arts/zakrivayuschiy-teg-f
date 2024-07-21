@@ -6,6 +6,7 @@
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -17,8 +18,10 @@
 
   <body class="page">
     <header class="header">
-      <h1 class="title">&lt;/HTML&gt;</h1>
-      <h2 class="subtitle">закрывающи<span class="lowercase">й</span> тег</h2>
+      <a class="header__link" href="#">
+        <span class="header__logo">&lt;/HTML&gt;</span>
+      </a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -46,13 +49,18 @@
       </nav>
     </header>
     <main class="content">
-      <section class="section section-zero">
-        <h3 class="section__heading">
+      <section class="section">
+        <h2 class="section__heading">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
         <div class="section__board">
-          <p class="section__label">&lt;/HTML&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <p class="section__label section__label_uppercase">&lt;/HTML&gt;</p>
+          <img
+            class="section__image section-nothing"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           Это было самое начало пути. На этом этапе важно было проникнуться
@@ -63,7 +71,11 @@
           Место для ваших воспоминаний о начале обучения.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -71,6 +83,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -97,16 +110,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
+          <button class="button card__like-button" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-one-blank">
-        <h3 class="section__heading">1 спринт: Я — чистый лист</h3>
+      <section class="section">
+        <h2 class="section__heading">1 спринт: Я — чистый лист</h2>
         <div class="section__board">
-          <p class="section__label">&lt;/HTML&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <p class="section__label section__label_uppercase">&lt;/HTML&gt;</p>
+          <img
+            class="section__image section-blank-page"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           На первых этапах мы работали со страхами и сомнениями, которые часто
@@ -119,7 +137,11 @@
           Место для ваших воспоминаний о начале первого спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -127,6 +149,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -153,16 +176,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-one-fail">
-        <h3 class="section__heading">1 спринт: А если не получится?</h3>
+      <section class="section">
+        <h2 class="section__heading">1 спринт: А если не получится?</h2>
         <div class="section__board">
-          <p class="section__label">&lt;CSS&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <p class="section__label section__label_uppercase">&lt;CSS&gt;</p>
+          <img
+            class="section__image section-if-fail"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           Первый проект — позади! Но это всё ещё самое начало пути. Радость
@@ -173,7 +201,11 @@
           Место для ваших воспоминаний об окончании первого спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -181,6 +213,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -207,16 +240,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-two-rush">
-        <h3 class="section__heading">2 спринт: Погоня за идеалом</h3>
+      <section class="section">
+        <h2 class="section__heading">2 спринт: Погоня за идеалом</h2>
         <div class="section__board">
           <p class="section__label">&lt;decisions&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <img
+            class="section__image section-rush"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы
@@ -229,7 +267,11 @@
           Место для ваших воспоминаний о начале второго спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -237,6 +279,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -263,16 +306,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-two-folks">
-        <h3 class="section__heading">2 спринт: О тех, кто рядом</h3>
+      <section class="section">
+        <h2 class="section__heading">2 спринт: О тех, кто рядом</h2>
         <div class="section__board">
           <p class="section__label">&lt;care&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <img
+            class="section__image section-folks"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           Всё это время вы были не одиноки (хотя, возможно, иногда и
@@ -285,7 +333,11 @@
           Место для ваших воспоминаний об окончании второго спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -293,6 +345,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -319,16 +372,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-three-bypass">
-        <h3 class="section__heading">3 спринт: Обходные стратегии</h3>
+      <section class="section">
+        <h2 class="section__heading">3 спринт: Обходные стратегии</h2>
         <div class="section__board">
           <p class="section__label">&lt;support&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <img
+            class="section__image section-bypass"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           На этом курсе вы постоянно решали разные задачи. В какой-то момент вам
@@ -339,7 +397,11 @@
           Место для ваших воспоминаний о начале третьего спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -347,6 +409,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -373,16 +436,21 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-three-depression">
-        <h3 class="section__heading">3 спринт: Когда опускаются руки</h3>
+      <section class="section">
+        <h2 class="section__heading">3 спринт: Когда опускаются руки</h2>
         <div class="section__board">
           <p class="section__label">&lt;lifes-style: none;&gt;</p>
-          <img class="section__image" src="./images/car.png" />
+          <img
+            class="section__image section-depression"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
         </div>
         <p class="section__text">
           Во время учёбы часто возникает чувство, когда не знаешь, за что
@@ -394,7 +462,11 @@
           Место для ваших воспоминаний об окончании третьего спринта.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -402,6 +474,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -428,17 +501,22 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-      <section class="section section-now">
-        <h3 class="section__heading">«Сейчас я здесь»</h3>
+      <section class="section">
+        <h2 class="section__heading">«Сейчас я здесь»</h2>
         <div class="section__board">
           <p class="section__label">&lt;experience&gt;</p>
-          <img class="section__image" src="./images/car.png" />
-        </div>       
+          <img
+            class="section__image section-now"
+            src="./images/car.png"
+            loading="lazy"
+            alt="Ночь. Фургон для продажи мороженного среди редких деревьев. Изображение в стиле пиксель-арт"
+          />
+        </div>
         <p class="section__text">
           Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
           Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с
@@ -452,7 +530,11 @@
           этой точке пути.
         </p>
         <div class="section__button">
-          <button class="card__icon-button" type="button">
+          <button
+            class="card__icon-button"
+            type="button"
+            aria-label="Понравилось"
+          >
             <svg
               class="like-icon"
               width="39"
@@ -460,6 +542,7 @@
               viewBox="0 0 39 36"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -486,62 +569,48 @@
               />
             </svg>
           </button>
-          <button class="card__like-button" type="button">
-            <span class="button__text">Like</span>
+          <button class="button card__like-button" type="button">
+            <span class="button__text button__text_like">Like</span>
           </button>
         </div>
       </section>
-    </main>
-    <footer class="footer">
       <button
-        class="footer__button"
+        class="button save-button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
-      >
+      />
         <svg
-          class="footer__svg"
+          class="save-button__icon"
           width="100%"
           height="100%"
-          viewBox="0 0 39 39"
+          viewBox="0 0 40 40"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <use href="#floppy" />
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
-        <span class="footer__text">Сохранить на память</span>
+        <span class="button__text button__text_save">Сохранить на память</span>
       </button>
-    </footer>
+      <dialog class="dialog" id="dialog-id">
+        <svg
+          class="dialog__icon"
+          width="100%"
+          height="100%"
+          viewBox="0 0 40 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./svg/floppy.svg#floppy" />
+        </svg>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
+        <button
+          class="button dialog__button"
+          type="button"
+          onclick="window['dialog-id'].close()"
+        >
+          <span class="button__text button__text_dialog">ок</span>
+        </button>
+      </dialog>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-
-<svg>
-  <symbol id="floppy">
-    <path
-      d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"
-    />
-  </symbol>
-</svg>
-
-<dialog class="dialog" id="dialog-id">
-  <svg
-          class="dialog__svg"
-          width="28"
-          height="28"
-          viewBox="0 0 49 49"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <use href="#floppy" />
-        </svg>
-  <p class="dialog__text">
-    Вставьте дискету, чтобы продолжить
-  </p>
-  <button 
-    class="dialog__button"
-    type="button"
-    onclick="window['dialog-id'].close()"
-  >
-    <span class="dialog__ok">ок</span>
-  </button>
-
-</dialog>

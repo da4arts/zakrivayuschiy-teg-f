@@ -7,7 +7,7 @@
     local('Inter-Variable'),
     url('./Iter-Variable.woff2') format('woff2 supports variations'),
     url('./Inter-Variable.woff2') format('woff2-variations');
-  font-weight: [минимальное значение] [максимальное значение];
+  font-weight: 400 785;
 }
 
 

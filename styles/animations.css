@@ -12,3 +12,132 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* menu keyframes */
+
+@keyframes motion-menu {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-4px);
+    }
+  }
+
+/* heart icon */
+.card__icon-button {
+    display: flex;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    transition: 0.3s ease;
+  }
+  
+  .sparks {
+    opacity: 0;
+  }
+  
+  .card__icon-button .core {
+    fill: transparent;
+    transition: 0.3s 0.03s linear;
+  }
+  
+  .card__icon-button .main-body {
+    fill: transparent;
+    transition: 0.3s linear;
+  }
+  
+  .card__icon-button .contour {
+    fill: var(--theme-color);
+    transition: 0.1s linear;
+  }
+  
+  /* hover */
+  .card__icon-button:hover .core {
+    fill:var(--theme-color);
+    transition: 0.3s linear;
+  }
+  
+  .card__icon-button:hover .main-body {
+    fill: var(--theme-color);
+    transition: 0.3s 0.05s linear;
+  }
+  
+  /* active */
+  .card__icon-button:active .core {
+    fill:rgb(255, 0, 0);
+    transition: 0.3s linear;
+  }
+  
+  .card__icon-button:active .main-body {
+    fill: rgb(255, 0, 0);
+    transition: 0.3s 0.05s linear;
+  }
+  
+  /* click */
+  .like-icon.is-liked .core {
+    fill: rgb(255, 0, 0);
+    transition: 0.3s linear;
+  }
+  
+  .like-icon.is-liked .main-body {
+    fill: rgb(255, 0, 0);
+    transition: 0.3s 0.05s linear;
+  }
+  
+  .like-icon.is-liked .contour {
+    fill: rgb(255, 0, 0);
+    transition: 0.3s 0.06s linear;
+  }
+  
+  /* Для того чтобы масштабировать сердце и сделать вспышку искр, придётся написать два кифрейма.
+   Первый — масштабирование с 1 до 1.5. 
+      Эту анимацию нужно запустить на всей группе элементов .heart через 0.1s 
+      после появления класса is-liked в разметке. Длиться масштабирование 
+      должно 0.3s с плавностью ease-in, происходить однажды,
+      но в две стороны — от начала к концу и обратно.
+      
+   Кифрейм для искр — изменение прозрачности или заливки (как вам удобно). 
+   Эта анимация длится 0.3s  и запускается через 0.3s однажды, с плавностью ease-in, в две стороны.*/
+
+
+  /*  на всей группе элементов .heart */
+  .like-icon.is-liked .heart {
+    animation: heart-scale 0.3s 0.1s alternate ease-in;
+    transform-origin: center center;
+  }
+  
+  /* масштабирование с 1 до 1.5 */
+  @keyframes heart-scale {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(1.5, 1.5);
+    }
+  }
+  
+  /*  Кифрейм для искр */
+  .like-icon.is-liked .sparks {
+    animation: sparks-splash 0.3s 0.3s alternate ease-in;
+  }
+  
+  @keyframes sparks-splash {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+  
+  /* focus */
+  .card__icon-button:focus {
+    outline: none;
+  }
+  
+  .card__icon-button:focus-visible {
+    outline: solid 2px var(--theme-color);
+    outline-offset: -3.5px;
+  }

@@ -3,11 +3,10 @@
     --theme-color: #00CC14;
     --theme-color-alpha: rgb(0, 204, 20, 0.6);
     --bg-color: #000000;
-    --bg-image: url("../images/background-dark.png");
     --heading-weight: 785;
     --text-weight: 465;
     --sparks-color: rgb(255, 0, 0);
-    --b-text-color: rgb(0, 204, 20);
+    --button-text-color: rgb(0, 204, 20);
     --text-border-color: rgb(255, 255, 255);
     --page-bg: 
       repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
