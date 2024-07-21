@@ -305,6 +305,7 @@
 }
 
 .card__like-button {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 130px;  
@@ -316,6 +317,7 @@
 }
 
 .save-button {
+  position: relative;
   display: flex;
   justify-self: center;
   align-items: center;
@@ -392,6 +394,7 @@
 }
 
 .dialog__button {
+  position: relative;
   grid-area: 2/1/3/3;
   padding: 12.5px clamp(7.15625rem, 6.7601rem + 1.6901vw, 8.28125rem);
 }
