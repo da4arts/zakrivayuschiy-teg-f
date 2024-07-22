@@ -33,6 +33,7 @@
 }
 
 /*--- HEADER ---*/
+/* высота хедэра по контенту, но с минимальным размером */
 .header {
   display: flex;
   flex-direction: column;
@@ -164,6 +165,50 @@
   position: relative;
 }
 
+
+
+.section__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: right;
+  outline: 2px solid var(--theme-color);
+  margin-block-end: 25px;
+}
+
+.filter_contrast{
+  filter: contrast(200%);
+}
+
+.filter_saturate {
+  filter: saturate(40%);
+}
+
+.filter_opacity {
+  filter: opacity(50%);
+}
+
+.filter_brightness {
+  filter: brightness(80%);
+}
+
+.filter_invert {
+  filter: invert(75%);
+}
+
+.filter_grayscale {
+  filter: grayscale(80%);
+
+}
+
+.filter_blur{
+  filter: blur(10px) hue-rotate(0.7turn);
+}
+
+.filter_sepia {
+  filter: sepia(1);
+}
+
 .section__label {
   position: absolute;
   top: 28px;
@@ -193,52 +238,8 @@
   }
 }
 
-.section__image {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  object-position: right;
-  outline: 2px solid var(--theme-color);
-  margin-block-end: 25px;
-}
-
-.section-nothing{
-  filter: contrast(200%);
-}
-
 .section__label_uppercase {
   text-transform: uppercase;
-}
-
-.section-blank-page {
-  filter: saturate(40%);
-}
-
-.section-if-fail {
-  filter: opacity(50%);
-}
-
-.section-rush {
-  filter: brightness(80%);
-}
-
-.section-folks {
-  filter: invert(75%);
-}
-
-.section-bypass {
-  filter: grayscale(80%);
-
-}
-
-.section-depression {
-  filter: blur(10px) hue-rotate(0.7turn);;
-
-}
-
-.section-now {
-  filter: sepia(1);
-
 }
 
 .section__text {
@@ -288,7 +289,7 @@
   background-color: var(--theme-color);
   transform: scaleX(0);
   transform-origin: left;
-  transition: 0.3s ease;
+  transition: 0.5s ease-in-out;
 }
 
 /*focus*/
@@ -301,7 +302,7 @@
 /*hover*/
 .button:hover::before{
   transform: scaleX(1);
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .card__like-button {
@@ -367,7 +368,6 @@
   line-height: 1.5;
   color: var(--theme-color);
   padding: 32px 28px;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .dialog:not([open]) {
